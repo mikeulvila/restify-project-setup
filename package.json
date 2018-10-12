@@ -1,0 +1,30 @@
+{
+  "name": "restify-project-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm start | ./node_modules/.bin/bunyan -o short",
+    "docs": "jsdoc --recurse ./src -d docs",
+    "lint": "eslint . --config=.eslintrc.js",
+    "start": "nodemon index.js",
+    "test-server": "export NODE_ENV=test || SET NODE_ENV=test && nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "convict": "^4.4.0",
+    "dotenv": "^6.0.0",
+    "mysql2": "^1.6.1",
+    "restify": "^7.2.1",
+    "restify-cors-middleware": "^1.1.1",
+    "restify-errors": "^6.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "jsdoc": "^3.5.5",
+    "nodemon": "^1.18.4"
+  }
+}
